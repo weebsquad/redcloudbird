@@ -9,5 +9,5 @@ docker build . -t redcloudbird
 # Run
 docker create redcloudbird
 
-docker run --restart="always" -ti -p 0.0.0.0:80:8080 -e LISTEN_PORT="8080" redcloudbird
+docker run --restart="always" -d -ti -p 0.0.0.0:80:8080 -e LISTEN_PORT="8080" redcloudbird
 
